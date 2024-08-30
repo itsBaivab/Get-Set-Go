@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"github.com/gorilla/mux"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/itsBaivab/Get-Set-Go/pkg/routes"
+	"github.com/itsBaivab/Get-Set-Go/GO-BOOK-STORE/pkg/routes"
 )
 
 

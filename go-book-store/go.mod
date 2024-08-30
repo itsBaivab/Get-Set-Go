@@ -1,4 +1,4 @@
-module github.com/itsBaivab/Get-Set-Go
+module github.com/itsBaivab/Get-Set-Go/GO-BOOK-STORE
 
 go 1.22.3
 

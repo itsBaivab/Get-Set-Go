@@ -2,7 +2,7 @@ package models
 
 import(
 	"github.com/jinzhu/gorm"
-	"github.com/itsBaivab/Get-Set-Go/go-book-store/pkg/config/config"
+	"github.com/itsBaivab/Get-Set-Go/GO-BOOK-STORE/pkg/config"
 )
 
 
@@ -32,6 +32,7 @@ func (b *Book) CreateBook() *Book{
 func GetAllBooks() []Book{
 	var Books []Book
 	db.Find(&Books)
+	return Books
 }
 
 

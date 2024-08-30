@@ -6,8 +6,8 @@ import(
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"github.com/itsBaivab/Get-Set-Go/pkg/models"
-	"github.com/itsBaivab/Get-Set-Go/pkg/utils"
+	"github.com/itsBaivab/Get-Set-Go/GO-BOOK-STORE/pkg/models"
+	"github.com/itsBaivab/Get-Set-Go/GO-BOOK-STORE/pkg/utils"
 )
 
 var NewBook models.Book
@@ -70,7 +70,7 @@ func UpdateBook(w http.ResponseWriter, r *http.Request){
 	if err !=nil{
 		fmt.Println("Error while parsing")
 	}
-	bookDetails, db := models.GetBookByID(ID)
+	bookDetails, db := models.GetBookById(ID)
 	if UpdateBook.Name != ""{
 		bookDetails.Name = UpdateBook.Name
 	}
@@ -81,6 +81,6 @@ func UpdateBook(w http.ResponseWriter, r *http.Request){
 		bookDetails.Publication = UpdateBook.Publication
 	}
 
-	db.save(&bookDetails)
+	db.Save(&bookDetails)
 
 }

@@ -7,9 +7,7 @@ import (
 )
 
 var db (
-	db *gorm.DB
-
-)
+	*gorm.DB)
 
 func Connect() {
 	d, err := gorm.Open("mysql", "baivab:almarisanchari/samplerest?carset=utf8&parseTime=True&loc=Local") 
