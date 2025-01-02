@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Omegle Clone with Video</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="localVideo" autoplay playsinline muted></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+    <div id="logMessages"></div>
+    <div class="chat-container">
+        <h1>Random Chat</h1>
+        <div id="chat"></div>
+        <div class="input-container">
+            <input type="text" id="message" placeholder="Type a message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
